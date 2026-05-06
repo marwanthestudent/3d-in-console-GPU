@@ -249,6 +249,7 @@ int main(int argc, char** argv)
 
     int N, iters;
     if (animate) {
+        //I kept saying N = 1 but actually there was a minimum of 60.
         N     = (argc > 2) ? std::atoi(argv[2]) : 60;   // smaller default for anim
         iters = 0;                                       // unused
     } else {
